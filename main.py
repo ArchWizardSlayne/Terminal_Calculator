@@ -29,7 +29,7 @@ def main():
             result = num1 / num2 
         else: print("Unknown operator")
 
-        print(result)
+        print(round(result, 2))
 
 if __name__ == "__main__":
     main()

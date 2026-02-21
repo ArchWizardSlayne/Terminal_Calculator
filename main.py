@@ -21,7 +21,7 @@ def main():
 
         if parts[1] == "+": result = num1 + num2 
         elif parts[1] == "-": result = num1 - num2 
-        elif parts[1] == "*": result = num1 * num2 
+        elif parts[1] == "*" or parts[1] == "x": result = num1 * num2 
         elif parts[1] == "/":
             if num1 == 0 or num2 == 0:
                 print("Cannot devide by 0")

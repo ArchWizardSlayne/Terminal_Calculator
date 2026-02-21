@@ -22,7 +22,11 @@ def main():
         if parts[1] == "+": result = num1 + num2 
         elif parts[1] == "-": result = num1 - num2 
         elif parts[1] == "*": result = num1 * num2 
-        elif parts[1] == "/": result = num1 / num2 
+        elif parts[1] == "/":
+            if num1 == 0 or num2 == 0:
+                print("Cannot devide by 0")
+                continue 
+            result = num1 / num2 
         else: print("Unknown operator")
 
         print(result)
